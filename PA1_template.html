@@ -173,8 +173,10 @@ Adding mean values to replace NAs did not affect the overall averages.</p>
 
 averages &lt;- as.data.frame(tapply(fixed$steps, list(fixed$interval, fixed$weekday), FUN = mean, na.rm = TRUE))
 
-library(data.table)
-setDT(averages, keep.rownames = TRUE)[]</code></pre>
+library(data.table)</code></pre>
+<pre><code>## data.table 1.9.6  For help type ?data.table or https://github.com/Rdatatable/data.table/wiki</code></pre>
+<pre><code>## The fastest way to learn (by data.table authors): https://www.datacamp.com/courses/data-analysis-the-data-table-way</code></pre>
+<pre class="r"><code>setDT(averages, keep.rownames = TRUE)[]</code></pre>
 <pre><code>##        rn   weekday   weekend
 ##   1:    0 2.3179245  0.000000
 ##   2:    5 0.4584906  0.000000
